@@ -28,3 +28,17 @@ def solution(array):
        i = (i1 + i2) / 2 
     
     return i
+
+
+# def solution(array):
+#     array.sort()
+#     n = len(array)
+
+#     if n % 2 == 1:
+#      i = array[n // 2]
+#     else:
+#        i1 = array[(n // 2) -1]
+#        i2 = array[n // 2]
+#        i = (i1 + i2) / 2
+
+#     return i
