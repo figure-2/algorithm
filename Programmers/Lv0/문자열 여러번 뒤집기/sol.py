@@ -1,11 +1,5 @@
 # 2 차원 정부 배열 queries / s, e의 형태
 
-def solution(my_string, queries):
-    answer = ''
-
-    for i in len(my_string):
-        if s in
-
 
 
 def solution(my_string, queries):
