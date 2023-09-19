@@ -29,3 +29,4 @@ def solution(my_string, queries):
 # replace로 풀기랑 
 
 # s,e 	queries 매소드
+# 따라서 이 함수는 주어진 범위 내에서 원래 문자열의 부분들을 역순으로 바꾸고 그 결과를 반환하는 작업을 수행합니다.
