@@ -25,22 +25,103 @@ def solution(keymap, targets):
 
 
 
-def solution(keymap, targets):
-    answer = []
+# def solution(keymap, targets):
+#     answer = []
 
-    for word in targets:    
-        times = 0         
+#     for word in targets:    
+#         times = 0         
         
-        for char in word:   
-            flag = False   
-            time = 101     
-            for key in keymap:      
-                if char in key:	
-                    time = min(key.index(char)+1, time)
-                    flag = True                    
-            if not flag:          
-                times = -1;break   
-            times += time         
-        answer.append(times)        
+#         for char in word:   
+#             flag = False   
+#             time = 101     
+#             for key in keymap:      
+#                 if char in key:	
+#                     time = min(key.index(char)+1, time)
+#                     flag = True                    
+#             if not flag:          
+#                 times = -1;break   
+#             times += time         
+#         answer.append(times)        
    
-    return answer
+#     return answer
+
+# def solution(keymap, targets):
+#     result = []
+
+#     for k in range(len(keymap)):
+#         keymap[k] = list(keymap[k])
+
+
+#     for i in targets:
+#         temp = 0
+#         for j in i:
+#             min_idx = 101
+#             for n in keymap:
+#                 try:
+#                     if n.index(j) < min_idx:
+#                         min_idx = n.index(j)
+
+#                 except:
+#                     continue
+
+#             if min_idx == 101:
+#                 temp = -1
+#             else:
+#                 temp += min_idx + 1
+#         result.append(temp)
+
+#     return result
+
+
+
+
+# for k in range(len(keymap)):
+#     keymap[k] = list(keymap[k])
+
+
+# for i in targets:
+#     temp = 0
+#     for j in i:
+#         min_idx = 101
+#         for n in keymap:
+#             try:
+#                 if n.index(j) < min_idx:
+#                     min_idx = n.index(j)
+
+#             except:
+#                 continue
+
+#         if min_idx == 101:
+#             temp = -1
+#         else:
+#             temp += min_idx + 1
+#     result.append(temp)
+
+# return result
+
+
+# def solution(keymap, targets):
+#     result = []
+
+#     for k in range(len(keymap)):
+#         keymap[k] = list(keymap[k])
+
+#     for i in targets:
+#         temp = 0
+#         for j in i:
+#             min_idx = 101
+#             for n in keymap:
+#                 try:
+#                     if n.index(j) < min_idx:
+#                         min_idx = n.index(j)
+#                 except:
+#                     continue
+
+#             if min_idx == 101: # If the character is not found.
+#                 result.append(-1)
+#             else:
+#                 temp += min_idx + 1
+
+#         result.append(temp)
+
+#     return result
