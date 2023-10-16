@@ -40,4 +40,4 @@ def solution(X, Y):
         return answer
     
 
-    https://chan-lab.tistory.com/36
+    # https://chan-lab.tistory.com/36
